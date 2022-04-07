@@ -1,0 +1,7 @@
+badger
+deer
+fox
+moose
+wild-hog
+hare
+human

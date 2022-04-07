@@ -2,8 +2,8 @@ use wasmedge_tensorflow_interface;
 use std::io::{self, Read};
 
 pub fn main() {
-    let model_data: &[u8] = include_bytes!("models/mobilenet_v1_1.0_224/mobilenet_v1_1.0_224_quant.tflite");
-    let labels = include_str!("models/mobilenet_v1_1.0_224/labels_mobilenet_quant_v1_224.txt");
+    let model_data: &[u8] = include_bytes!("models/back40/back40.tflite");
+    let labels = include_str!("models/back40/labels.txt");
 
     let mut buf = Vec::new();
     io::stdin().read_to_end(&mut buf).unwrap();
