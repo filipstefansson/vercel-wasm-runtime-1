@@ -1,8 +1,15 @@
+cargo-features = ["strip"]
+
 [package]
 name = "wasm_vercel_example"
 version = "0.1.0"
 authors = ["ubuntu"]
 edition = "2018"
+
+[profile.release]
+strip = true 
+opt-level = "z"
+lto = true
 
 [[bin]]
 name = "classify"
